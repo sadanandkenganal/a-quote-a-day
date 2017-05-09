@@ -1,0 +1,27 @@
+<html>
+<head>
+  <title>A quote a day</title>
+</head>
+<body>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<div align="center">
+  <h1 style="color:#1a1a1a" id="quote"></h1>
+</div>
+
+<script>
+var quoteArray=[
+  "Be The Best Version Of You",
+  "All that I am, or hope to be, I owe to my angel mother",
+  "Sometimes we expect more from others because we'd be willing to do that much for them",
+  "In the end, we only regret the chances we didn't take.",
+  "Don't look back - you're not going that way.",
+  "What defines us is how well we rise after falling."
+               ];
+
+          var randomNumber=Math.floor((Math.random() * 5) + 1);
+          document.getElementById('quote').innerHTML=quoteArray[randomNumber-1];
+
+</script>
+
+</body>
+</html>
